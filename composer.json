@@ -9,7 +9,7 @@
             "email": "akhamatmkhoir@gmail.com"
         }
     ],
-    require": {
+    "require": {
         "illuminate/support": "^5.5",
         "illuminate/container": "^5.5",
         "illuminate/database": "^5.5",

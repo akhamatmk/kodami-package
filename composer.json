@@ -29,12 +29,5 @@
         "psr-0": {
             "Kodami\\Models": "src/"
         }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Kodami\\Models\\ModelsServiceProvider"
-            ]
-        }
     }
 }

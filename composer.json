@@ -36,4 +36,5 @@
                 "Kodami\\Models\\ModelsServiceProvider"
             ]
         }
+    }
 }

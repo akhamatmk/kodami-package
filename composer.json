@@ -1,0 +1,14 @@
+{
+    "name": "kodami/models",
+    "description": "it's models kodami aplication",
+    "type": "library",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "akhamat miftakul khoir",
+            "email": "akhamatmkhoir@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

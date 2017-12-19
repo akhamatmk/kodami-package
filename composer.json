@@ -2,7 +2,7 @@
     "name": "kodami/models",
     "description": "it's models kodami aplication",
     "type": "library",
-    "license": "",
+    "license": "MIT",
     "authors": [
         {
             "name": "akhamat miftakul khoir",

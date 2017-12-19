@@ -4,7 +4,7 @@ namespace Kodami\Models;
 
 use Illuminate\Support\ServiceProvider;
 
-class DatabaseServiceProvider extends ServiceProvider
+class ModelsServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.

@@ -7,6 +7,6 @@ class Test
 {
 	function getData()
 	{
-		return 2;
+		return 212;
 	}
 }

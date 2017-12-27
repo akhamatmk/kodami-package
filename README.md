@@ -1,2 +1,2 @@
 # kodami-package
-kodami package
+kodami package for all

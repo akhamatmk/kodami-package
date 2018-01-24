@@ -4,10 +4,26 @@ namespace Kodami\Models\Mysql;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Auth\Authenticatable as AuthenticableTrait;
+use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class Member extends Model
+
+class Member extends Model implements Authenticatable, JWTSubject
 {
 	use SoftDeletes;
+	use AuthenticableTrait;
+
+    protected $primaryKey = 'id';
+    public function getJWTIdentifier()
+	{
+		return $this->getKey();
+	}
+
+	public function getJWTCustomClaims()
+	{
+		return [];
+	}
 
     protected $fillable = [
         'name', 'email',

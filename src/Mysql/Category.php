@@ -10,13 +10,12 @@ class Category extends Model
 	use SoftDeletes;
 
     protected $fillable = [
-        'name', 'parent_id', 'has_children', 'order_num', 'active', 'slug', 'permalink', 'description',
+        'name', 'parent_id', 'has_children', 'order_num', 'active', 'slug', 'permalink', 'description', 'image',
     ];
 
     public function parent()
     {
         return $this->belongsTo(Category::class, 'parent_id')->where('active', 1);
-
     }
 
     public function children()

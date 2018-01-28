@@ -32,4 +32,9 @@ class Member extends Model implements Authenticatable, JWTSubject
     protected $hidden = [
         'password',
     ];
+
+    public function shop()
+    {
+    	return $this->hasOne('Kodami\Models\Mysql\Koprasi', 'id', 'koprasi_id');
+    }
 }

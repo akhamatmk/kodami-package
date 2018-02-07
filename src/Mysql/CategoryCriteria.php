@@ -13,4 +13,9 @@ class CategoryCriteria extends Model
     protected $fillable = [
         'category_id', 'label'
     ];
+
+    public function selection()
+    {
+    	return $this->hasMany('Kodami\Models\Mysql\ValueCategoryCriteria', 'category_criteria_id', 'id');
+    }
 }

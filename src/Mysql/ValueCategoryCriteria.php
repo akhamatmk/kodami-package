@@ -12,5 +12,10 @@ class ValueCategoryCriteria extends Model
 
     protected $fillable = [
         'category_criteria_id', 'value'
-    ];    
+    ];
+
+    public function criteria()
+    {
+        return $this->hasOne('Kodami\Models\Mysql\CategoryCriteria', 'id', 'category_criteria_id');
+    }
 }

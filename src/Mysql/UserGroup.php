@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class UserGroup extends Model
 {
-	use SoftDeletes;
+	#use SoftDeletes;
     
     protected $table = 'user_group';
 }

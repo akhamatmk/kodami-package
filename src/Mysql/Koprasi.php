@@ -11,7 +11,7 @@ class Koprasi extends Model
     protected $table = 'koprasi';
 
     protected $fillable = [
-        'regency_id', 'name', 'url', 'slogan', 'description', 'image', 'pickup_address', 'postal_code',
+        'member_id', 'regency_id', 'name', 'url', 'slogan', 'description', 'image', 'pickup_address', 'postal_code',
     ];
     
 }

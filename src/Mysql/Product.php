@@ -10,7 +10,7 @@ class Product extends Model
 	use SoftDeletes;
 
     protected $fillable = [
-        'koprasi_id', 'category_id', 'name', 'name_alias','description', 'price', 'primary_image', 'avaible', 'success_transaction', 'total_comment', 'weight', 'viewer', 'stock', 'new', 'discont', 'discont_anggota',
+        'koprasi_id', 'category_id', 'name', 'name_alias', 'description', 'long_description', 'price', 'primary_image', 'avaible', 'success_transaction', 'total_comment', 'weight', 'viewer', 'stock', 'new', 'discont', 'discont_anggota',
     ];
 
     public function category()
@@ -25,6 +25,11 @@ class Product extends Model
 
     public function criteria()
     {
-        return $this->hasOne('Kodami\Models\Mysql\ProductCriteria', 'product_id', 'id');
-    }    
+        return $this->hasMany('Kodami\Models\Mysql\ProductCriteria', 'product_id', 'id');
+    }
+
+    public function koprasi()
+    {
+        return $this->hasOne('Kodami\Models\Mysql\Koprasi', 'id', 'koprasi_id');
+    }  
 }

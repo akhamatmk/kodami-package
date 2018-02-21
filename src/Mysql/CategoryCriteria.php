@@ -11,7 +11,7 @@ class CategoryCriteria extends Model
     protected $table = 'category_criteria';  
 
     protected $fillable = [
-        'category_id', 'label'
+        'label'
     ];
 
     public function selection()

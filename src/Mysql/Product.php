@@ -25,6 +25,11 @@ class Product extends Model
 
     public function criteria()
     {
-        return $this->hasOne('Kodami\Models\Mysql\ProductCriteria', 'product_id', 'id');
-    }    
+        return $this->hasMany('Kodami\Models\Mysql\ProductCriteria', 'product_id', 'id');
+    }
+
+    public function koprasi()
+    {
+        return $this->hasOne('Kodami\Models\Mysql\Koprasi', 'id', 'koprasi_id');
+    }  
 }

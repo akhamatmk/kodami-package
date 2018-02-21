@@ -14,4 +14,9 @@ class JunkCategoryCriteria extends Model
         'category_id', 'category_criteria_id'
     ];
 
+    function criteria()
+    {
+    	return $this->hasOne('Kodami\Models\Mysql\CategoryCriteria', 'id', 'category_criteria_id');
+    }
+
 }

@@ -13,4 +13,9 @@ class JunkCategorySpesification extends Model
         'category_id', 'category_spesification_id'
     ];
 
+    function spesification()
+    {
+    	return $this->hasOne('Kodami\Models\Mysql\CategorySpesification', 'id', 'category_spesification_id');
+    }
+
 }

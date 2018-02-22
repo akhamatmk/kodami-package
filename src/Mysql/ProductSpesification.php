@@ -10,6 +10,6 @@ class ProductSpesification extends Model
 	use SoftDeletes;
 
     protected $fillable = [
-        'category_spesification_id', 'value',
+        'product_id', 'category_spesification_id', 'value', 
     ];
 }

@@ -37,4 +37,9 @@ class Member extends Model implements Authenticatable, JWTSubject
     {
     	return $this->hasOne('Kodami\Models\Mysql\Koprasi', 'member_id', 'id');
     }
+
+     public function dropshiper()
+    {
+        return $this->hasOne('Kodami\Models\Mysql\Dropshiper', 'member_id', 'id');
+    }
 }

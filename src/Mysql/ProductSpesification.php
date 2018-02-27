@@ -12,4 +12,9 @@ class ProductSpesification extends Model
     protected $fillable = [
         'product_id', 'category_spesification_id', 'value', 
     ];
+
+    public function category()
+    {
+        return $this->hasOne('Kodami\Models\Mysql\CategorySpesification', 'id', 'category_spesification_id');
+    }
 }

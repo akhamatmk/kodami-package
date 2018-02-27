@@ -28,6 +28,11 @@ class Product extends Model
         return $this->hasMany('Kodami\Models\Mysql\ProductCriteria', 'product_id', 'id');
     }
 
+     public function spesification()
+    {
+        return $this->hasMany('Kodami\Models\Mysql\ProductSpesification', 'product_id', 'id');
+    }
+
     public function koprasi()
     {
         return $this->hasOne('Kodami\Models\Mysql\Koprasi', 'id', 'koprasi_id');

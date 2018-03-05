@@ -17,4 +17,14 @@ class KodamiProduct extends Model
 
        return $result->stock;
     }
+
+    public function image()
+    {
+    	return $this->hasMany('Kodami\Models\Mysql\KodamiProductImage', 'kodami_product_id', 'id');
+    }
+
+    public function spesification()
+    {
+        return $this->hasMany('Kodami\Models\Mysql\KodamiProductSpesification', 'kodami_product_id', 'id');
+    }
 }

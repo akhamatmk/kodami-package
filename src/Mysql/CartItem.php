@@ -9,8 +9,13 @@ class CartItem extends Model
 {
 	use SoftDeletes;
 
-	 public function product()
+	public function product()
     {
         return $this->hasOne('Kodami\Models\Mysql\KodamiProduct', 'id', 'product_id');
+    }
+
+    public function district()
+    {
+    	return $this->hasOne('Kodami\Models\Mysql\District', 'id', 'district_id');
     }
 }

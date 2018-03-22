@@ -28,7 +28,7 @@ class Product extends Model
         return $this->hasMany('Kodami\Models\Mysql\ProductCriteria', 'product_id', 'id');
     }
 
-     public function spesification()
+    public function spesification()
     {
         return $this->hasMany('Kodami\Models\Mysql\ProductSpesification', 'product_id', 'id');
     }

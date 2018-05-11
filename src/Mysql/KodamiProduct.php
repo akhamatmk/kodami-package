@@ -27,4 +27,9 @@ class KodamiProduct extends Model
     {
         return $this->hasMany('Kodami\Models\Mysql\KodamiProductSpesification', 'kodami_product_id', 'id');
     }
+
+    public function category()
+    {
+      return $this->hasOne('Kodami\Models\Mysql\Category', 'id', 'category_id');
+    }
 }

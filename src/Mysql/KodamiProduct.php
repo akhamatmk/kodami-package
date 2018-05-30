@@ -13,6 +13,8 @@ class KodamiProduct extends Model
 	public function stock() {
        $result = $this->hasMany('Kodami\Models\Mysql\Product', 'kodami_product_id', 'id')
        ->select(DB::raw('sum(stock) as stock'))
+       ->where("products.is_validate", 1)
+       ->where("products.ever_validate", 1)
        ->first();
 
        return $result->stock;

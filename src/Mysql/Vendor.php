@@ -5,7 +5,7 @@ namespace Kodami\Models\Mysql;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class RequestForQuotationProduct extends Model
+class Vendor extends Model
 {
-	use SoftDeletes;	
+	use SoftDeletes;
 }

@@ -8,6 +8,13 @@ class Deposit extends Model
 {
     protected $table = 'deposit';
 
+     /**
+     * TYPE
+     * - 1 => Deposit awal
+     * - 2 => Topup
+     * 
+     */
+
     /**
      * [rekening_bank description]
      * @return [type] [description]

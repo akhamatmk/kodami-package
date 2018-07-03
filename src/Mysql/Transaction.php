@@ -7,5 +7,10 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Transaction extends Model
 {
-	use SoftDeletes;	
+	use SoftDeletes;
+
+	public function items()
+    {
+    	return $this->hasMany('Kodami\Models\Mysql\TransactionItem', 'transaction_id', 'id');
+    }
 }

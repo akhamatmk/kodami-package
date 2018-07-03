@@ -4,7 +4,7 @@ namespace Kodami\Models\Mysql;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Withdrawal extends Model
+class PulsaOperator extends Model
 {
-	protected $table = 'withdrawal';
+    protected $table = 'pulsa_model';
 }

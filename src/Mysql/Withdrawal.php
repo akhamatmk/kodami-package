@@ -1,6 +1,6 @@
 <?php
 
-namespace Koodami\Models\Mysql;
+namespace Kodami\Models\Mysql;
 
 use Illuminate\Database\Eloquent\Model;
 

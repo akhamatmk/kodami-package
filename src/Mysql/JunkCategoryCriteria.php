@@ -19,4 +19,9 @@ class JunkCategoryCriteria extends Model
     	return $this->hasOne('Kodami\Models\Mysql\CategoryCriteria', 'id', 'category_criteria_id');
     }
 
+    public function selection()
+    {
+    	return $this->hasMany('Kodami\Models\Mysql\ValueCategoryCriteria', 'category_criteria_id', 'category_criteria_id');
+    }
+
 }

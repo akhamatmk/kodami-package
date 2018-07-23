@@ -12,8 +12,19 @@ class Deposit extends Model
      * TYPE
      * - 1 => Deposit awal
      * - 2 => Topup
-     * 
+     * - 3 => Simpanan Pokok
+     * - 4 => Simpanan Sukarela
+     * - 5 => Simpanan Wajib
      */
+
+    /**
+     * [user description]
+     * @return [type] [description]
+     */
+    public function user()
+    {
+        return $this->hasOne('App\UserModel', 'id', 'user_id');
+    }
 
     /**
      * [rekening_bank description]

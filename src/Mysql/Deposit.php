@@ -18,6 +18,14 @@ class Deposit extends Model
      */
 
     /**
+     * [user_proses description]
+     * @return [type] [description]
+     */
+    public function user_proses()
+    {
+        return $this->hasOne('\App\UserModel', 'id', 'proses_user_id');
+    }
+    /**
      * [user description]
      * @return [type] [description]
      */

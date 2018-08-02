@@ -16,4 +16,9 @@ class PPulsa extends Model
     {
     	return $this->hasOne('Kodami\Models\Mysql\PVendor', 'id', 'p_vendor_id');
     }
+
+    public function operatordata()
+    {
+    	return $this->hasOne('Kodami\Models\Mysql\PPulsaOperator', 'nama', 'operator');
+    }
 }

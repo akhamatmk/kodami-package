@@ -11,5 +11,5 @@ class CategoryHome extends Model
 	public function productcategory()
     {
     	return $this->hasMany('Kodami\Models\Mysql\ProductCategoryHome', 'category_home_id', 'id');
-    }    
+    }
 }

@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class PlnPaketToken extends Model
 {
-
+	protected $table = 'pln_paket_token';
 }

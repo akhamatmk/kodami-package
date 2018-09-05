@@ -16,6 +16,14 @@ class Deposit extends Model
      * - 4 => Simpanan Sukarela
      * - 5 => Simpanan Wajib
      */
+    
+    /**
+     * STATUS
+     * 1 => Submit Pembayaran
+     * 2 => konfirmasi Pembayaran oleh anggota berikut upload bukti pembayaran
+     * 3 => Approve atau status pembayaran oke sudah diterima
+     * 4 => Denied / Reject status pembayaran belum diterima 
+     */
 
     /**
      * [user_proses description]

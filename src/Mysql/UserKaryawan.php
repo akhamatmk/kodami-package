@@ -4,7 +4,7 @@ namespace Kodami\Models\Mysql;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Kabupaten extends Model
+class UserKaryawan extends Model
 {
-    protected $table = 'kabupaten';
+    protected $table = 'user_karyawan';
 }

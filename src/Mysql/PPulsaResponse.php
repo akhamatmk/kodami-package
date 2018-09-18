@@ -4,7 +4,7 @@ namespace Kodami\Models\Mysql;
 
 use Illuminate\Database\Eloquent\Model;
 
-class PlnTagihan extends Model
+class PPulsaResponse extends Model
 {
-	protected $table = 'pln_tagihan';
+    protected $table = 'p_pulsa_response';
 }

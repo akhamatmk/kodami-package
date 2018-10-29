@@ -21,7 +21,8 @@ class Users extends Model
 	          	5 => 'Operator',
 	          	6 => 'Admin Operator',
 	          	7 => 'Dropshiper',
-                8 => 'Admin Produk'
+                8 => 'Admin Produk',
+                9 => 'Monitoring'
 	        ];
 
         return $arr;

@@ -4,9 +4,10 @@ namespace Kodami\Models\Mysql;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SimkoMember extends Model
-{	
- 	protected $table = 'simko_member';
+class UserKuotaSementara extends Model
+{
+ 	
+ 	protected $table = 'user_kuota_sementara';
 
  	/**
  	 * [user description]
@@ -14,6 +15,6 @@ class SimkoMember extends Model
  	 */
  	public function user()
  	{
- 		return $this->hasOne('Kodami\Models\Mysql\Users', 'id', 'user_id');
+ 		return $this->hasOne('\Kodami\Models\Mysql\Users', 'id', 'user_id');
  	}
 }

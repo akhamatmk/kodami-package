@@ -25,4 +25,13 @@ class PPulsaTransaksi extends Model
     {
     	return $this->hasOne('App\ModelUser', 'id', 'user_id');
     }
+
+    /**
+     * [plnToken description]
+     * @return [type] [description]
+     */
+    public function plnToken()
+    {
+        return $this->hasOne('Kodami\Models\Mysql\TransaksiPlnToken', 'id', 'transaksi_pln_token_id');
+    }
 }

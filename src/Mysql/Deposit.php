@@ -25,6 +25,11 @@ class Deposit extends Model
      * 4 => Denied / Reject status pembayaran belum diterima 
      */
 
+    public function type_deposit()
+    {
+        return [1=>'Deposit Awal',2=>'Topup',3=>'Simpanan Pokok',4=>'Simpanan Sukarela',5=>'Simpanan Wajib'];
+    }
+
     /**
      * [user_proses description]
      * @return [type] [description]

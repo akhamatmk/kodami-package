@@ -36,7 +36,7 @@ class Deposit extends Model
      */
     public function user_proses()
     {
-        return $this->hasOne('\App\UserModel', 'id', 'proses_user_id');
+        return $this->hasOne('\Kodami\Models\Mysql\Users', 'id', 'proses_user_id');
     }
     /**
      * [user description]
@@ -44,7 +44,7 @@ class Deposit extends Model
      */
     public function user()
     {
-        return $this->hasOne('App\UserModel', 'id', 'user_id');
+        return $this->hasOne('\Kodami\Models\Mysql\Users', 'id', 'user_id');
     }
 
     /**

@@ -13,7 +13,7 @@ class ConfirmationOrder extends Model
 
 	public function user()
     {
-    	return $this->hasOne('App\User', 'id', 'user_id');
+    	return $this->hasOne('\Kodami\Models\Mysql\Users', 'id', 'user_id');
     }
 
     public function transaction(){

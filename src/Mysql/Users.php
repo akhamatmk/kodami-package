@@ -27,6 +27,15 @@ class Users extends Model
 	        ];
 
         return $arr;
+    }   
+
+    /**
+     * Relasi table user anggota
+     * @return object
+     */
+    public function user_dropshiper()
+    {
+        return $this->hasOne('\Kodami\Models\Mysql\UserDropshiper', 'user_id', 'id');
     }
 
     /**

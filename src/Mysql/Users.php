@@ -47,6 +47,15 @@ class Users extends Model
     }
 
     /**
+     * [domisiliKelurahan description]
+     * @return [type] [description]
+     */
+    public function domisiliKabupaten()
+    {
+        return $this->hasOne('Kodami\Models\Mysql\Kabupaten', 'id_kab', 'domisili_kabupaten_id');
+    }
+
+    /**
      * [ktpProvinsi description]
      * @return [type] [description]
      */

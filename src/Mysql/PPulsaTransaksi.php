@@ -23,7 +23,7 @@ class PPulsaTransaksi extends Model
      */
     public function user()
     {
-    	return $this->hasOne('App\ModelUser', 'id', 'user_id');
+    	return $this->hasOne('Kodami\Models\Mysql\Users', 'id', 'user_id');
     }
 
     /**
@@ -33,5 +33,14 @@ class PPulsaTransaksi extends Model
     public function plnToken()
     {
         return $this->hasOne('Kodami\Models\Mysql\TransaksiPlnToken', 'id', 'transaksi_pln_token_id');
+    }
+
+    /**
+     * Relasi profile prabayar
+     * @return object
+     */
+    public function plnPascabayar()
+    {
+        return $this->hasOne('Kodami\Models\Mysql\TransaksiPlnPascabayar', 'id', 'transaksi_pln_pascabayar_id');
     }
 }

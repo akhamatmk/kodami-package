@@ -22,10 +22,20 @@ class Users extends Model
 	          	6 => 'Admin Operator',
 	          	7 => 'Dropshiper',
                 8 => 'Admin Produk',
-                9 => 'Monitoring'
+                9 => 'Monitoring',
+                10=> 'Hunter'
 	        ];
 
         return $arr;
+    }   
+
+    /**
+     * Relasi table user anggota
+     * @return object
+     */
+    public function user_dropshiper()
+    {
+        return $this->hasOne('\Kodami\Models\Mysql\UserDropshiper', 'user_id', 'id');
     }
 
     /**

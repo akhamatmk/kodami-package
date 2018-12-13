@@ -16,4 +16,13 @@ class RekeningBank extends Model
     {
     	return $this->belongsTo('Kodami\Models\Mysql\Bank');
     }
+
+    /**
+     * relasi bank
+     * @return object
+     */
+    public function bank_()
+    {
+    	return $this->hasOne('Kodami\Models\Mysql\Bank', 'id', 'bank_id');
+    }
 }
